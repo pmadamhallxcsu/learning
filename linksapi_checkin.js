@@ -36,7 +36,7 @@ function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// ==================== 企业微信机器人通知 ====================
+// ==================== 企业微信机器人通知，还需要配置环境变量QYWX_KEY ====================
 async function sendQYWXNotification(title, content) {
     if (!QYWX_KEY) {
         return; // 未配置则静默跳过
